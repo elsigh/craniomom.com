@@ -11,7 +11,8 @@ import { Testimonial } from '@/components/Testimonial'
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
-import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
+import imageMomAndBaby from '@/images/mom-and-baby.jpg'
+import imageNewBaby from '@/images/new-baby.jpg'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -160,11 +161,11 @@ function Services() {
 
 export const metadata = {
   description:
-    'Angela Pater is a craniosacral massage therapist who focuses on infant care.',
+    'Angela Pater is a nationally certified massage therapist focused on craniosacral therapy for infant care.',
 }
 
 export default async function Home() {
-  let caseStudies = (await loadMDXMetadata('work')).slice(0, 3)
+  //let caseStudies = (await loadMDXMetadata('work')).slice(0, 3)
 
   return (
     <>
@@ -173,27 +174,38 @@ export default async function Home() {
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
             Exceptional care for your new baby.
           </h1>
+          <StylizedImage
+            {...imageNewBaby}
+            sizes="(min-width: 1024px) 41rem, 31rem"
+            className="justify-center lg:justify-end lg:group-even/section:justify-start"
+          />
           <p className="mt-6 text-xl text-neutral-600">
-            Angela Pater is a craniosacral massage therapist focused on infant
-            care.
+            Angela Pater is a nationally certified massage therapist focused on
+            craniosacral therapy for infant care.
           </p>
         </FadeIn>
       </Container>
 
-      <Clients />
+      {/* <Clients /> */}
 
-      <CaseStudies caseStudies={caseStudies} />
+      {/* <CaseStudies caseStudies={caseStudies} /> */}
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={false && { name: 'Phobia', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        Angela’s work is amazing - she has a real gift for working with babies
+        (and new parents!) and I can’t recommend her highly enough.
       </Testimonial>
+      <Container className="mt-24 sm:mt-32 md:mt-56">
+        <StylizedImage
+          {...imageMomAndBaby}
+          sizes="(min-width: 400px) 41rem, 31rem"
+          className="justify-center lg:justify-end lg:group-even/section:justify-start"
+        />
+      </Container>
 
-      <Services />
+      {/* <Services /> */}
 
       <ContactSection />
     </>
