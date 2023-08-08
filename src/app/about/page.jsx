@@ -6,11 +6,11 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
-import imageAboutFlowers from '@/images/about-flowers.jpg'
+import imageMomAndBaby from '@/images/mom-and-baby.jpg'
 
 function Education() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className="mt-20 bg-neutral-950 py-24 lg:py-32">
       <SectionIntro eyebrow="Education" title="Classes & Training" invert>
         <p>
           Thank you for reading through these trainings. I’m committed to
@@ -97,6 +97,59 @@ function Education() {
   )
 }
 
+/*
+function Services() {
+  return (
+    <>
+      <SectionIntro
+        eyebrow="Services"
+        title="We help you identify, explore and respond to new opportunities."
+        className="mt-24 sm:mt-32 lg:mt-40"
+      >
+        <p>
+          As long as those opportunities involve giving us money to re-purpose
+          old projects — we can come up with an endless number of those.
+        </p>
+      </SectionIntro>
+      <Container className="mt-16">
+        <div className="lg:flex lg:items-center lg:justify-end">
+          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
+            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
+              <StylizedImage
+                src={imageLaptop}
+                sizes="(min-width: 1024px) 41rem, 31rem"
+                className="justify-center lg:justify-end"
+              />
+            </FadeIn>
+          </div>
+          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+            <ListItem title="Web development">
+              We specialise in crafting beautiful, high quality marketing pages.
+              The rest of the website will be a shell that uses lorem ipsum
+              everywhere.
+            </ListItem>
+            <ListItem title="Application development">
+              We have a team of skilled developers who are experts in the latest
+              app frameworks, like Angular 1 and Google Web Toolkit.
+            </ListItem>
+            <ListItem title="E-commerce">
+              We are at the forefront of modern e-commerce development. Which
+              mainly means adding your logo to the Shopify store template we’ve
+              used for the past six years.
+            </ListItem>
+            <ListItem title="Custom content management">
+              At Studio we understand the importance of having a robust and
+              customised CMS. That’s why we run all of our client projects out
+              of a single, enormous Joomla instance.
+            </ListItem>
+          </List>
+        </div>
+      </Container>
+    </>
+  )
+}
+*/
+
 export const metadata = {
   title: 'About',
   description: '',
@@ -107,36 +160,32 @@ export default async function About() {
     <>
       <PageIntro eyebrow="About" title="Angela Pater">
         <p>In 2014 I became a mom.</p>
-        <div className="mt-10 max-w-2xl space-y-6 text-base">
-          <p>
-            I began applying craniosacral therapy for healing in 1997 while
-            finishing a pre-med degree at the University of Texas, Austin. I
-            always had a strong sense that I’d study craniosacral therapy for
-            the pediatric community when I became a mom. I signed up for the
-            first Upledger Peds series and was overjoyed to see a positive
-            pregnancy test a few days before course one began - on the Monday
-            before a Wednesday start of class, just days away from one another
-            was the beginning of a new journey.
-          </p>
-          <FadeIn className="max-w-3xl">
-            <Image
-              src={imageAboutFlowers}
-              alt="Baby"
-              sizes="(min-width: 1024px) 41rem, 31rem"
-              className="justify-center lg:justify-end lg:group-even/section:justify-start"
-            />
-          </FadeIn>
-          <p>
-            A favorite testimonial to this work comes from the night of my
-            daughter’s arrival. She had a home birth at home. When the midwife
-            informed us that she had water in her lungs and we’d need transfer,
-            I applied CST and the story shifted. Our midwife said, ”Whatever you
-            just did, she’s now 100% clear.” We keep up monitoring and I’ll
-            never regret trying to work with my daughter, helping her develop
-            and thrive within those first hours.
-          </p>
-        </div>
       </PageIntro>
+      <Container className="mt-16">
+        <FadeIn className="lg:float-right lg:pb-12 lg:pl-8">
+          <Image src={imageMomAndBaby} alt="" className="lg:w-[600px]" />
+        </FadeIn>
+        <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
+          I began applying craniosacral therapy for healing in 1997 while
+          finishing a pre-med degree at the University of Texas, Austin. I
+          always had a strong sense that I’d study craniosacral therapy for the
+          pediatric community when I became a mom. I signed up for the first
+          Upledger Peds series and was overjoyed to see a positive pregnancy
+          test a few days before course one began - on the Monday before a
+          Wednesday start of class, just days away from one another was the
+          beginning of a new journey.
+        </p>
+
+        <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
+          A favorite testimonial to this work comes from the night of my
+          daughter’s arrival. She had a home birth at home. When the midwife
+          informed us that she had water in her lungs and we’d need transfer, I
+          applied CST and the story shifted. Our midwife said, ”Whatever you
+          just did, she’s now 100% clear.” We keep up monitoring and I’ll never
+          regret trying to work with my daughter, helping her develop and thrive
+          within those first hours.
+        </p>
+      </Container>
 
       <Education />
 
