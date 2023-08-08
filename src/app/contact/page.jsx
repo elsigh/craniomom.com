@@ -1,4 +1,3 @@
-import { useId } from 'react'
 import Link from 'next/link'
 
 import { Border } from '@/components/Border'
@@ -7,149 +6,159 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
-import { SocialMedia } from '@/components/SocialMedia'
-
-function TextInput({ label, ...props }) {
-  let id = useId()
-
-  return (
-    <div className="group relative z-0 transition-all focus-within:z-10">
-      <input
-        type="text"
-        id={id}
-        {...props}
-        placeholder=" "
-        className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
-      />
-      <label
-        htmlFor={id}
-        className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950 peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-neutral-950"
-      >
-        {label}
-      </label>
-    </div>
-  )
-}
-
-function RadioInput({ label, ...props }) {
-  return (
-    <label className="flex gap-x-3">
-      <input
-        type="radio"
-        {...props}
-        className="h-6 w-6 flex-none appearance-none rounded-full border border-neutral-950/20 outline-none checked:border-[0.5rem] checked:border-neutral-950 focus-visible:ring-1 focus-visible:ring-neutral-950 focus-visible:ring-offset-2"
-      />
-      <span className="text-base/6 text-neutral-950">{label}</span>
-    </label>
-  )
-}
-
-function ContactForm() {
-  return (
-    <FadeIn className="lg:order-last">
-      <form>
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Work inquiries
-        </h2>
-        <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
-          <TextInput
-            label="Email"
-            type="email"
-            name="email"
-            autoComplete="email"
-          />
-          <TextInput
-            label="Company"
-            name="company"
-            autoComplete="organization"
-          />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Message" name="message" />
-          <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
-            <fieldset>
-              <legend className="text-base/6 text-neutral-500">Budget</legend>
-              <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$25K – $50K" name="budget" value="25" />
-                <RadioInput label="$50K – $100K" name="budget" value="50" />
-                <RadioInput label="$100K – $150K" name="budget" value="100" />
-                <RadioInput label="More than $150K" name="budget" value="150" />
-              </div>
-            </fieldset>
-          </div>
-        </div>
-        <Button type="submit" className="mt-10">
-          Let’s work together
-        </Button>
-      </form>
-    </FadeIn>
-  )
-}
 
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
-      </h2>
-      <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
-      </p>
-
-      <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
+      <Offices className="mt-4 grid grid-cols-1 gap-8 sm:grid-cols-2" />
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Email us
+          Email:{' '}
+          <Link
+            href={`mailto:info@craniomom.com`}
+            className="text-neutral-600 hover:text-neutral-950"
+          >
+            info@craniomom.com
+          </Link>
         </h2>
-        <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          {[
-            ['Careers', 'careers@studioagency.com'],
-            ['Press', 'press@studioagency.com'],
-          ].map(([label, email]) => (
-            <div key={email}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
-              <dd>
-                <Link
-                  href={`mailto:${email}`}
-                  className="text-neutral-600 hover:text-neutral-950"
-                >
-                  {email}
-                </Link>
-              </dd>
-            </div>
-          ))}
-        </dl>
-      </Border>
-
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
-          Follow us
-        </h2>
-        <SocialMedia className="mt-6" />
       </Border>
     </FadeIn>
   )
 }
 
+const faqs = [
+  {
+    question: 'What is craniosacral and why is helpful for babies?',
+    answer:
+      'Craniosacral is a gentle hands-on therapy that helps ease restrictions in the body and create better function. Often small restrictions or tightness can cause a baby to fuss, eat and sleep poorly. Craniosacral also provides ease in oral tissues in a way that can support babies before and after a tongue or lip tie release. ',
+  },
+  {
+    question: 'Do you accept insurance?',
+    answer:
+      'Unfortunately, similar to many holistic modalities, craniosacral is not covered by usual insurance. While insurance company CEO’s make millions, insurance companies are here to say no. Consider craniosacral an investment in your health, in your child’s health.',
+  },
+  {
+    question: 'Can I use my FSA or HSA?',
+    answer:
+      'Angela will provide a receipt to allow patients to make their own claims to reimbursement accounts.',
+  },
+  {
+    question:
+      'My lactation consultant referred me to Angela for craniosacral therapy and tongue tie assessment. Do you accept insurance? Is there an extra fee? How long is the session? What should I expect during the session?',
+    answer:
+      'Initial visits for babies with feeding concerns are 75 minutes. New patient forms must be completed prior to the visit. Angela will perform a simple intake, detailed physical and oral motor exam including a tongue-tie exam. She will give parents exercises for a home program as well as treat the baby with craniosacral therapy.  Craniosacral is not covered by insurance.',
+  },
+  {
+    question: 'Do you see patients in San Francisco?',
+    answer:
+      'Yes. On Fridays, appointments are available in Pacific Heights in San Francisco by appointment.',
+  },
+  {
+    question: 'Can Angela do an in-home visit?',
+    answer:
+      'House calls are possible and reserved for babies under 8 weeks of age.',
+  },
+  {
+    question: 'Can Angela assess a tongue tie?',
+    answer:
+      'Yes. Angela works with babies treating all kinds of feeding difficulties. She has trained with the developers of clinically validated tools for diagnosing tongue tie. She can guide families in understanding oral function and create a care plan for families who are struggling with breastfeeding and infant feeding.',
+  },
+  {
+    question: 'Why is Angela different than other providers for baby bodywork?',
+    answer:
+      'As a licensed independent practitioner, a family nurse practitioner, she has committed countless hours of training to serve over 1000 babies with care and specialized attention. On top of basic primary and nursing care, she has 3000+ hours of bodywork education and advanced certification in craniosacral therapy from the Upledger Institute. She is a lactation counselor and has studied oromotor therapy, child space, primitive reflex integration, and TummyTime! to provide babies and their families with a thorough assessment, education, and treatment in a safe and compassionate manner.',
+  },
+  {
+    question: 'Do you see adults for bodywork?',
+    answer:
+      'Yes. Angela has been working with adults for bodywork for over 25 years. Upon moving to San Francisco in 2007 she was employed by Google to work on employees there. After 16 years, she is moving to a dedicated practice to support the infant community, however, she has many modalities to help you including basic massage, deep tissue therapy, myofascial release, positional release, visceral manipulation, and osteopathic-based techniques. Angela applies a depth of knowledge to each person based on what the body needs for each treatment.',
+  },
+  {
+    question: 'What precautions are taken in regard to Covid?',
+    answer:
+      'Angela wears appropriate PPE including masking per local health requirements. Angela’s office in San Francisco has a HEPA filter and a door or window to the outside to increase fresh air. Ventilation is our friend in a respiratory pandemic. Angela is fully vaccinated and boosted. Please reschedule if you or anyone in your household is ill. Masking is optional. However, I continue to wear one while working.',
+  },
+  {
+    question: 'How often should I see Angela for craniosacral care?',
+    answer:
+      'Most human bodies require hands-on therapy at least seasonally. Our bodies need more craniosacral support when we have increased stress, injury, or surgical recovery. Many patients will need ongoing care for acute conditions. Babies needing craniosacral for feeding, digestive, or musculoskeletal concerns (torticollis and plagiocephaly ) return at least weekly for the first few sessions.',
+  },
+  {
+    question: 'What is required of a new patient?',
+    answer:
+      'In order to secure an appointment, a $50 deposit is required at the time of booking. This fee can be applied to your fees/copays/craniosacral work.',
+  },
+  {
+    question: 'How are payments are accepted?',
+    answer:
+      'Zelle, cash, or check. We cannot accept cards at the San Francisco office.',
+  },
+]
+
+function FAQ() {
+  return (
+    <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+      <div className="lg:col-span-5">
+        <h2
+          id="faq"
+          className="text-2xl font-bold leading-10 tracking-tight text-gray-900"
+        >
+          Frequently asked questions
+        </h2>
+        <p className="mt-4 text-base leading-7 text-gray-600">
+          Can’t find the answer you’re looking for? Reach out to{' '}
+          <Link
+            href={`mailto:info@craniomom.com`}
+            className="text-neutral-600 hover:text-neutral-950"
+          >
+            info@craniomom.com
+          </Link>
+        </p>
+      </div>
+      <div className="mt-10 lg:col-span-7 lg:mt-0">
+        <dl className="space-y-10">
+          {faqs.map((faq) => (
+            <div key={faq.question}>
+              <dt className="text-base font-semibold leading-7 text-gray-900">
+                {faq.question}
+              </dt>
+              <dd className="mt-2 text-base leading-7 text-gray-600">
+                {faq.answer}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  )
+}
+
 export const metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
+  title: 'Contact',
+  description: 'I can’t wait to meet you and your baby.',
 }
 
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p>We can’t wait to hear from you.</p>
+      <PageIntro eyebrow="" title="Let’s work together">
+        <p>I can’t wait to meet you and your baby.</p>
       </PageIntro>
 
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
-          <ContactForm />
-          <ContactDetails />
-        </div>
+      <Container className="mt-24">
+        <Button
+          href="https://cal.com/craniomom"
+          invert={false}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Book a Session
+        </Button>
+      </Container>
+
+      <Container className="mt-24">
+        <FAQ />
       </Container>
     </>
   )

@@ -183,6 +183,9 @@ export default async function Home() {
             Angela Pater is a nationally certified massage therapist focused on
             craniosacral therapy for infant care.
           </p>
+          <p className="mt-6 text-xl text-neutral-600">
+            I work with families to support baby’s development.
+          </p>
         </FadeIn>
       </Container>
 

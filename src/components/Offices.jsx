@@ -21,17 +21,20 @@ export function Offices({ invert = false, ...props }) {
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Copenhagen" invert={invert}>
-          1 Carlsberg Gate
+        <Office name="In-office sessions" invert={invert}>
+          <a href="https://www.rootandbranchcenter.com/">
+            The Root and the Branch
+          </a>
           <br />
-          1260, København, Denmark
+          <a href="https://goo.gl/maps/Vntw2pK9iSZPzK1F9">
+            2409 Sacramento St #2, San Francisco, CA 94115
+          </a>
         </Office>
       </li>
       <li>
-        <Office name="Billund" invert={invert}>
-          24 Lego Allé
-          <br />
-          7190, Billund, Denmark
+        <Office name="In-home sessions" invert={invert}>
+          for babies under 8 weeks - within San Francisco is $275 (determined by
+          distance)
         </Office>
       </li>
     </ul>
