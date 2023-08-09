@@ -9,7 +9,8 @@ export const metadata = {
   },
   openGraph: {
     title: 'CranioMom',
-    description: 'Angela Pater is a nationally certified massage therapist focused on craniosacral therapy for infant care.',
+    description:
+      'Angela Pater is a nationally certified massage therapist focused on craniosacral therapy for infant care.',
     url: 'https://craniomom.com',
     siteName: 'CranioMom',
     images: [
@@ -22,7 +23,6 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
-  }
 }
 
 export default function Layout({ children }) {
