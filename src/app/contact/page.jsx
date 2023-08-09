@@ -109,13 +109,14 @@ function FAQ() {
           Frequently asked questions
         </h2>
         <p className="mt-4 text-base leading-7 text-gray-600">
-          Can’t find the answer you’re looking for? Reach out to{' '}
+          Feel free to reach out to me at{' '}
           <Link
             href={`mailto:info@craniomom.com`}
             className="text-neutral-600 hover:text-neutral-950"
           >
             info@craniomom.com
           </Link>
+          .
         </p>
       </div>
       <div className="mt-10 lg:col-span-7 lg:mt-0">
@@ -144,7 +145,7 @@ export default function Contact() {
   return (
     <>
       <PageIntro eyebrow="" title="Let’s work together">
-        <p>I can’t wait to meet you and your baby.</p>
+        <p>I would be honored to meet you and your baby.</p>
       </PageIntro>
 
       <Container className="my-12">

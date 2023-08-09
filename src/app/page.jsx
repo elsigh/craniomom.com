@@ -112,8 +112,6 @@ export const metadata = {
 }
 
 export default async function Home() {
-  //let caseStudies = (await loadMDXMetadata('work')).slice(0, 3)
-
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
@@ -144,13 +142,12 @@ export default async function Home() {
         (and new parents!) and I can’t recommend her highly enough.
       </Testimonial>
 
-      <Container className="mt-24 sm:mt-32">
-        <FadeIn className="max-w-3xl">
+      <Container className="mt-24 text-center sm:mt-32">
+        <FadeIn>
           <Image
             src={imageBabyFlowers}
             alt="Baby"
-            sizes="(min-width: 1024px) 41rem, 31rem"
-            className="justify-center lg:justify-end lg:group-even/section:justify-start"
+            className="mx-auto justify-center lg:w-[600px]"
           />
         </FadeIn>
       </Container>

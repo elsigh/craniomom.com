@@ -10,7 +10,7 @@ import imageMomAndBaby from '@/images/mom-and-baby.jpg'
 
 function Education() {
   return (
-    <div className="mt-20 bg-neutral-950 py-24 lg:py-32">
+    <div className="clear-both mt-20 bg-neutral-950 py-24 lg:py-32">
       <SectionIntro eyebrow="Education" title="Classes & Training" invert>
         <p>
           Thank you for reading through these trainings. I’m committed to
@@ -159,31 +159,55 @@ export default async function About() {
   return (
     <>
       <PageIntro eyebrow="About" title="Angela Pater">
-        <p>In 2014 I became a mom.</p>
+        <p>
+          I’ve always had a strong sense of how to navigate my life, a way of
+          listening to that internal quiet voice. I am so glad I’ve listened.
+        </p>
+        <p className="mt-8">In 2014 I became a mom.</p>
       </PageIntro>
       <Container className="mt-16">
-        <FadeIn className="lg:float-right lg:pb-12 lg:pl-8">
+        <FadeIn className="lg:float-right lg:pb-12  lg:pl-8">
           <Image src={imageMomAndBaby} alt="" className="lg:w-[600px]" />
         </FadeIn>
-        <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-          I began applying craniosacral therapy for healing in 1997 while
-          finishing a pre-med degree at the University of Texas, Austin. I
-          always had a strong sense that I’d study craniosacral therapy for the
-          pediatric community when I became a mom. I signed up for the first
-          Upledger Peds series and was overjoyed to see a positive pregnancy
-          test a few days before course one began - on the Monday before a
-          Wednesday start of class, just days away from one another was the
-          beginning of a new journey.
+        <p className="mt-6 flex gap-x-2  text-neutral-950">
+          I didn’t know what a difference having trained as a craniosacral
+          practitioner would make the night I went into labor.
         </p>
 
-        <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-          A favorite testimonial to this work comes from the night of my
-          daughter’s arrival. She had a home birth at home. When the midwife
-          informed us that she had water in her lungs and we’d need transfer, I
-          applied CST and the story shifted. Our midwife said, ”Whatever you
-          just did, she’s now 100% clear.” We keep up monitoring and I’ll never
-          regret trying to work with my daughter, helping her develop and thrive
-          within those first hours.
+        <p className="mt-6 flex gap-x-2  text-neutral-950">
+          I began applying craniosacral therapy (CST) for healing in 1997 while
+          a pre-med student at the University of Texas, Austin. I was drawn to
+          CST because the touch is light and intended to optimize the motility
+          of the intricate web of bones, muscles, soft tissues and fluid that
+          makes us who we are. The techniques resonated with the mindfulness
+          mediation practice I was enjoying at Austin’s newly opened (San
+          Francisco’s branch) Zen Center.
+        </p>
+        <p className="mt-6 flex gap-x-2  text-neutral-950">
+          And, I always had a strong sense that I’d study craniosacral therapy
+          for the pediatric community when I became a mom. After 18 joyful years
+          of marriage, travel and moving to the San Francisco Bay area, my
+          partner and I wanted to welcome in a new journey. After 6 months of
+          actively trying to become pregnant in 2013, I got the positive
+          pregnancy test. The synchronicity of receiving that test a few days
+          before my first Upledger CST Pediatric series began meant to me that I
+          was on the right track. I work now with the pediatric community
+          because parenthood is an intricate dance of welcoming what the present
+          moment has to offer. I want to help create a world for our little ones
+          where as individuals they are in relationship with their own essence
+          and what it means to be self-regulated.
+        </p>
+        <p className="mt-6 flex gap-x-2  text-neutral-950">
+          Upon the birth of my child at home, I personally experienced the
+          profound benefit of this work. When the midwife informed us that our
+          baby had water in her lungs and we’d need to be transferred to the
+          hospital, I applied CST and the crisis unequivocally shifted. Our
+          nurse midwife’s statement, ”Whatever you just did, she’s now 100%
+          clear.” We all exhaled. I am eternally grateful for having the
+          skillset and capacity to act swiftly, clearly and turn things around
+          that night. CST has become an embodied tool that I look forward to
+          offering to you because I have faith in the easeful difference it can
+          make.
         </p>
       </Container>
 
