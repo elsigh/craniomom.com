@@ -3,6 +3,7 @@ import { RootLayout } from '@/components/RootLayout'
 import '@/styles/tailwind.css'
 
 export const metadata = {
+  metadataBase: new URL('https://craniomom.com'),
   title: {
     template: '%s - CranioMom',
     default: 'CranioMom - Exceptional care for your new baby.',
