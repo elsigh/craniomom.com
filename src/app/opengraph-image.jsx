@@ -3,16 +3,18 @@ import { ImageResponse } from 'next/server'
 
 export const runtime = 'edge'
 
-export async function GET(request) {
+export const alt = 'CranioMom'
+export const size = {
+  width: 882,
+  height: 630,
+}
+
+export const contentType = 'image/png'
+
+export default async function Image() {
   try {
-    const { searchParams } = new URL(request.url)
-
-    // ?title=<title>
-    const hasTitle = searchParams.has('title')
-    const title = hasTitle ? searchParams.get('title')?.slice(0, 100) : ''
-
     const imageData = await fetch(
-      new URL('./mom-and-baby.jpg', import.meta.url)
+      new URL('./../images/mom-and-baby.jpg', import.meta.url)
     ).then((res) => res.arrayBuffer())
 
     return new ImageResponse(
@@ -39,8 +41,27 @@ export async function GET(request) {
               justifyItems: 'center',
             }}
           >
-            <img width="359" height="256" src={imageData} alt="" />
+            <img
+              width={size.width}
+              height={size.height}
+              src={imageData}
+              alt=""
+            />
           </div>
+        </div>
+      ),
+      { ...size }
+    )
+  } catch (e) {
+    console.log(`${e.message}`)
+    return new Response(`Failed to generate the image`, {
+      status: 500,
+    })
+  }
+}
+
+/*
+
           <div
             style={{
               fontSize: 60,
@@ -55,17 +76,4 @@ export async function GET(request) {
           >
             {title}
           </div>
-        </div>
-      ),
-      {
-        width: 1200,
-        height: 630,
-      }
-    )
-  } catch (e) {
-    console.log(`${e.message}`)
-    return new Response(`Failed to generate the image`, {
-      status: 500,
-    })
-  }
-}
+          */

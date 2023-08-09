@@ -7,22 +7,22 @@ export const metadata = {
     template: '%s - CranioMom',
     default: 'CranioMom - Exceptional care for your new baby.',
   },
-  openGraph: {
-    title: 'CranioMom',
-    description:
-      'Angela Pater is a nationally certified massage therapist focused on craniosacral therapy for infant care.',
-    url: 'https://craniomom.com',
-    siteName: 'CranioMom',
-    images: [
-      {
-        url: 'https://craniomom.com/og',
-        width: 800,
-        height: 600,
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
+  // openGraph: {
+  //   title: 'CranioMom',
+  //   description:
+  //     'Angela Pater is a nationally certified massage therapist focused on craniosacral therapy for infant care.',
+  //   url: 'https://craniomom.com',
+  //   siteName: 'CranioMom',
+  //   images: [
+  //     {
+  //       url: 'https://craniomom.com/og',
+  //       width: 800,
+  //       height: 600,
+  //     },
+  //   ],
+  //   locale: 'en_US',
+  //   type: 'website',
+  // },
 }
 
 export default function Layout({ children }) {
