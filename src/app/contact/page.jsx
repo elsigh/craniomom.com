@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { Border } from '@/components/Border'
@@ -6,6 +7,7 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
+import imageMomToBe from '@/images/mom-to-be.jpg'
 
 function ContactDetails() {
   return (
@@ -133,7 +135,6 @@ function FAQ() {
     </div>
   )
 }
-
 export const metadata = {
   title: 'Contact',
   description: 'I can’t wait to meet you and your baby.',
@@ -146,7 +147,7 @@ export default function Contact() {
         <p>I can’t wait to meet you and your baby.</p>
       </PageIntro>
 
-      <Container className="mt-24">
+      <Container className="my-12">
         <Button
           href="https://cal.com/craniomom"
           invert={false}
@@ -157,7 +158,13 @@ export default function Contact() {
         </Button>
       </Container>
 
-      <Container className="mt-24">
+      <FadeIn>
+        <div className="sm:mt-12 sm:px-8 lg:float-right lg:mr-16 lg:mt-[-240px] lg:w-[340px] lg:px-0 lg:pb-12">
+          <Image src={imageMomToBe} alt="" />
+        </div>
+      </FadeIn>
+
+      <Container className="clear-both mt-24">
         <FAQ />
       </Container>
     </>
