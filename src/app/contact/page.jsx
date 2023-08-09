@@ -134,16 +134,18 @@ export default function Contact() {
         <p>I would be honored to meet you and your baby.</p>
       </PageIntro>
 
-      <Container className="my-12">
-        <Button
-          href="https://cal.com/craniomom"
-          invert={false}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Book a Session
-        </Button>
-      </Container>
+      <FadeIn>
+        <Container className="my-12">
+          <Button
+            href="https://cal.com/craniomom"
+            invert={false}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Book a Session
+          </Button>
+        </Container>
+      </FadeIn>
 
       <FadeIn>
         <div className="sm:mt-12 sm:px-8 lg:float-right lg:mr-16 lg:mt-[-240px] lg:w-[340px] lg:px-0 lg:pb-12">
