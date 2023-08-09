@@ -5,15 +5,12 @@ import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
 import imageMomToBe from '@/images/mom-to-be.jpg'
 
 function ContactDetails() {
   return (
     <FadeIn>
-      <Offices className="mt-4 grid grid-cols-1 gap-8 sm:grid-cols-2" />
-
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Email:{' '}
@@ -38,7 +35,7 @@ const faqs = [
   {
     question: 'Do you accept insurance?',
     answer:
-      'Unfortunately, similar to many holistic modalities, craniosacral is not covered by usual insurance. While insurance company CEO’s make millions, insurance companies are here to say no. Consider craniosacral an investment in your health, in your child’s health.',
+      'Unfortunately, similar to many holistic modalities, craniosacral is not covered by usual insurance. Consider craniosacral an investment in your health, in your child’s health.',
   },
   {
     question: 'Can I use my FSA or HSA?',
@@ -46,8 +43,7 @@ const faqs = [
       'Angela will provide a receipt to allow patients to make their own claims to reimbursement accounts.',
   },
   {
-    question:
-      'My lactation consultant referred me to Angela for craniosacral therapy and tongue tie assessment. Do you accept insurance? Is there an extra fee? How long is the session? What should I expect during the session?',
+    question: 'What should I expect during the session?',
     answer:
       'Initial visits for babies with feeding concerns are 75 minutes. New patient forms must be completed prior to the visit. Angela will perform a simple intake, detailed physical and oral motor exam including a tongue-tie exam. She will give parents exercises for a home program as well as treat the baby with craniosacral therapy.  Craniosacral is not covered by insurance.',
   },
@@ -62,16 +58,6 @@ const faqs = [
       'House calls are possible and reserved for babies under 8 weeks of age.',
   },
   {
-    question: 'Can Angela assess a tongue tie?',
-    answer:
-      'Yes. Angela works with babies treating all kinds of feeding difficulties. She has trained with the developers of clinically validated tools for diagnosing tongue tie. She can guide families in understanding oral function and create a care plan for families who are struggling with breastfeeding and infant feeding.',
-  },
-  {
-    question: 'Why is Angela different than other providers for baby bodywork?',
-    answer:
-      'As a licensed independent practitioner, a family nurse practitioner, she has committed countless hours of training to serve over 1000 babies with care and specialized attention. On top of basic primary and nursing care, she has 3000+ hours of bodywork education and advanced certification in craniosacral therapy from the Upledger Institute. She is a lactation counselor and has studied oromotor therapy, child space, primitive reflex integration, and TummyTime! to provide babies and their families with a thorough assessment, education, and treatment in a safe and compassionate manner.',
-  },
-  {
     question: 'Do you see adults for bodywork?',
     answer:
       'Yes. Angela has been working with adults for bodywork for over 25 years. Upon moving to San Francisco in 2007 she was employed by Google to work on employees there. After 16 years, she is moving to a dedicated practice to support the infant community, however, she has many modalities to help you including basic massage, deep tissue therapy, myofascial release, positional release, visceral manipulation, and osteopathic-based techniques. Angela applies a depth of knowledge to each person based on what the body needs for each treatment.',
@@ -84,17 +70,17 @@ const faqs = [
   {
     question: 'How often should I see Angela for craniosacral care?',
     answer:
-      'Most human bodies require hands-on therapy at least seasonally. Our bodies need more craniosacral support when we have increased stress, injury, or surgical recovery. Many patients will need ongoing care for acute conditions. Babies needing craniosacral for feeding, digestive, or musculoskeletal concerns (torticollis and plagiocephaly ) return at least weekly for the first few sessions.',
+      'Our bodies need more craniosacral support when we have increased stress, injury, or surgical recovery. Many patients will need ongoing care for acute conditions. Babies needing craniosacral for feeding, digestive, or musculoskeletal concerns (torticollis and plagiocephaly ) return at least weekly for the first few sessions.',
   },
   {
     question: 'What is required of a new patient?',
     answer:
-      'In order to secure an appointment, a $50 deposit is required at the time of booking. This fee can be applied to your fees/copays/craniosacral work.',
+      'In order to secure an appointment, a $50 deposit is required at the time of booking.',
   },
   {
     question: 'How are payments are accepted?',
     answer:
-      'Zelle, cash, or check. We cannot accept cards at the San Francisco office.',
+      'Zelle, cash, or check. We cannot accept credit cards at the San Francisco office.',
   },
 ]
 

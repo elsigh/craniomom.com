@@ -33,8 +33,7 @@ export function Offices({ invert = false, ...props }) {
       </li>
       <li>
         <Office name="In-home sessions" invert={invert}>
-          for babies under 8 weeks - within San Francisco is $275 (determined by
-          distance)
+          for babies under 8 weeks - within San Francisco
         </Office>
       </li>
     </ul>

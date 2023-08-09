@@ -6,9 +6,7 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
-import { Testimonial } from '@/components/Testimonial'
 import imageBabyFlowers from '@/images/baby-flowers.jpg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import imageNewBaby from '@/images/new-baby.jpg'
 
@@ -136,6 +134,7 @@ export default async function Home() {
         </FadeIn>
       </Container>
 
+      {/*
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={false && { name: 'Phobia', logo: logoPhobiaDark }}
@@ -143,6 +142,7 @@ export default async function Home() {
         Angela’s work is amazing - she has a real gift for working with babies
         (and new parents!) and I can’t recommend her highly enough.
       </Testimonial>
+      */}
 
       <Container className="mt-24 text-center sm:mt-32">
         <FadeIn>
