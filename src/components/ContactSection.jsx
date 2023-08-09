@@ -1,6 +1,7 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
+import { Offices } from '@/components/Offices'
 
 export function ContactSection() {
   return (
@@ -15,6 +16,12 @@ export function ContactSection() {
               <Button href="/contact" invert>
                 Book a Session
               </Button>
+            </div>
+            <div className="mt-10 border-t border-white/10 pt-10">
+              <Offices
+                invert
+                className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
+              />
             </div>
           </div>
         </div>

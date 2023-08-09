@@ -27,13 +27,14 @@ export function Offices({ invert = false, ...props }) {
           </a>
           <br />
           <a href="https://goo.gl/maps/Vntw2pK9iSZPzK1F9">
-            2409 Sacramento St #2, San Francisco, CA 94115
+            2409 Sacramento St #2, San Francisco, CA 94115 - $225
           </a>
         </Office>
       </li>
       <li>
         <Office name="In-home sessions" invert={invert}>
-          for babies under 8 weeks - within San Francisco
+          for babies under 8 weeks - within San Francisco - $275 (determined by
+          location)
         </Office>
       </li>
     </ul>
