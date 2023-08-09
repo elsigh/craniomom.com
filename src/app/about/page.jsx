@@ -29,7 +29,7 @@ function Education() {
             Mar 2, 2014
           </GridListItem>
           <GridListItem title="Craniosacral Therapy for Infants" invert>
-            Carol Gray, LMT, CST, RPYT - Oct 20- 24, 2014
+            Carol Gray, LMT, CST, RPYT - Oct 20-24, 2014
           </GridListItem>
           <GridListItem
             title="Craniosacral Therapy for Infant Breastfeeding"
@@ -52,7 +52,7 @@ function Education() {
             invert
           >
             International Association of Healthcare Practioner’s Lisa Polec, DC,
-            BI-D - Sept 9- 11, 2016.
+            BI-D - Sept 9-11, 2016.
           </GridListItem>
           <GridListItem title="VM1: Visceral Manipulation: Abdomen 1" invert>
             Barral Institute’s Dee Dettmann Ahern, PT, BI-D - Oct 9-14, 2016
@@ -61,35 +61,38 @@ function Education() {
             Barral Institute’s Dee Dettmann Ahern, PT, BI-D - Nov 6-11, 2016
           </GridListItem>
           <GridListItem title="VM3: Visceral Manipulation: The Pelvis" invert>
-            Barral Institute’s Dee Dettmann Ahern, PT, BI-D - August 20- 25,
-            2017
+            Barral Institute’s Dee Dettmann Ahern, PT, BI-D - August 20-25, 2017
           </GridListItem>
           <GridListItem
             title="LT1: Visceral Manipulation: Listening Techniques 1"
             invert
           >
             An Integrative Approach to Evaluation - CaGail Wetzler, PT, DPT,
-            EDO, BI-D - Jan 19- 21, 2018
+            EDO, BI-D - Jan 19-21, 2018
           </GridListItem>
           <GridListItem
             title="CI-CRBMT: Clinical Interventions: Concussion Recovery"
             invert
           >
             Barral Manual Therapy CI-CRBMT - Gail Wetzler, PT, DPT, EDO, BI-D -
-            Sept 13- 15, 2019
+            Sept 13-15, 2019
           </GridListItem>
           <GridListItem
             title="VM4-VC: Visceral Manipulation: The Thorax"
             invert
           >
-            Barral Instutute’s Wetzler, Frey - June 12- 13, 2020
+            Barral Instutute’s Wetzler, Frey - June 12-13, 2020
           </GridListItem>
           <GridListItem
             title="LT2: Visceral Manipulation: Listening Techniques 2"
             invert
           >
             An Advanced Evaluation Approach to Total Body Systems - Upledger
-            Institues’s Gail Wetzler, PT, DPT, EDO, BI-D - Oct 1- 3, 2020
+            Institues’s Gail Wetzler, PT, DPT, EDO, BI-D - Oct 1-3, 2020
+          </GridListItem>
+          <GridListItem title="Mindfulness Teacher Training" invert>
+            Mindfulness Training Institute - Mark Coleman and Marin Aylward -
+            Sept 2022 - June 2023
           </GridListItem>
         </GridList>
       </Container>
@@ -165,11 +168,11 @@ export default async function About() {
         </p>
         <p className="mt-8">In 2014 I became a mom.</p>
       </PageIntro>
-      <Container className="mt-16">
-        <FadeIn className="lg:float-right lg:pb-12  lg:pl-8">
+      <Container className="mt-8">
+        <FadeIn className="lg:float-right lg:pb-12 lg:pl-8">
           <Image src={imageMomAndBaby} alt="" className="lg:w-[600px]" />
         </FadeIn>
-        <p className="mt-6 flex gap-x-2  text-neutral-950">
+        <p className="mt-8 flex gap-x-2  text-neutral-950">
           I didn’t know what a difference having trained as a craniosacral
           practitioner would make the night I went into labor.
         </p>

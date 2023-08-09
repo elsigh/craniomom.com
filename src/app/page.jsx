@@ -124,12 +124,14 @@ export default async function Home() {
             sizes="(min-width: 1024px) 41rem, 31rem"
             className="justify-center lg:justify-end lg:group-even/section:justify-start"
           />
-          <p className="mt-6 text-xl text-neutral-600">
+          <p className="mt-12 text-xl text-neutral-600">
             Angela Pater is a nationally certified massage therapist focused on
             craniosacral therapy for infant care.
           </p>
           <p className="mt-6 text-xl text-neutral-600">
-            I work with families to support baby’s development.
+            It is the combined intelligence of all my teachers, education,
+            experience, and my personal journey that supports me in supporting
+            you.
           </p>
         </FadeIn>
       </Container>
