@@ -28,9 +28,9 @@ function ContactDetails() {
 
 const faqs = [
   {
-    question: 'What is craniosacral and why is helpful for babies?',
+    question: 'What is craniosacral and why is it helpful for babies?',
     answer:
-      'Craniosacral is a gentle hands-on therapy that helps ease restrictions in the body and create better function. Often small restrictions or tightness can cause a baby to fuss, eat and sleep poorly. Craniosacral also provides ease in oral tissues in a way that can support babies before and after a tongue or lip tie release. ',
+      'Craniosacral is a gentle hands-on therapy that helps ease restrictions in the body to create better function. Often small restrictions or tightness can cause a baby to fuss, eat and sleep poorly. Craniosacral also provides ease in oral tissues in a way that can support babies before and after a tongue or lip tie release. ',
   },
   {
     question: 'Do you accept insurance?',
