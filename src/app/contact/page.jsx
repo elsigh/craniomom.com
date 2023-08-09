@@ -70,7 +70,7 @@ const faqs = [
   {
     question: 'How often should I see Angela for craniosacral care?',
     answer:
-      'Our bodies need more craniosacral support when we have increased stress, injury, or surgical recovery. Many patients will need ongoing care for acute conditions. Babies needing craniosacral for feeding, digestive, or musculoskeletal concerns (torticollis and plagiocephaly ) return at least weekly for the first few sessions.',
+      'Our bodies need more craniosacral support when we have increased stress, injury, or surgical recovery. Many patients will need ongoing care for acute conditions. Babies needing craniosacral for feeding, digestive, or musculoskeletal concerns (torticollis and plagiocephaly) return at least weekly for the first few sessions.',
   },
   {
     question: 'What is required of a new patient?',
