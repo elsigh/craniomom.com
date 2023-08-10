@@ -112,9 +112,9 @@ export const metadata = {
 export default async function Home() {
   return (
     <>
-      <Container className="mt-24 sm:mt-32 md:mt-56">
+      <Container className="mt-24">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+          <h1 className="sm:text-7 mb-8 font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance]">
             Exceptional care for your new baby.
           </h1>
           <StylizedImage
