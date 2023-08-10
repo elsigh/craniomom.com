@@ -14,7 +14,7 @@ export const contentType = 'image/png'
 export default async function Image() {
   try {
     const imageData = await fetch(
-      new URL('./../images/og.png', import.meta.url)
+      new URL('./../images/og.jpg', import.meta.url)
     ).then((res) => res.arrayBuffer())
 
     return new ImageResponse(
