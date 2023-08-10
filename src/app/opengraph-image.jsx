@@ -5,8 +5,8 @@ export const runtime = 'edge'
 
 export const alt = 'CranioMom'
 export const size = {
-  width: 882,
-  height: 630,
+  width: 1200,
+  height: 627,
 }
 
 export const contentType = 'image/png'
