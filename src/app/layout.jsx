@@ -15,16 +15,10 @@ export const metadata = {
     url: 'https://craniomom.com',
     type: 'website',
   },
-  //   siteName: 'CranioMom',
-  //   images: [
-  //     {
-  //       url: 'https://craniomom.com/og',
-  //       width: 800,
-  //       height: 600,
-  //     },
-  //   ],
-  //   locale: 'en_US',
-  // },
+  twitter: {
+    description: 'CranioMom - Exceptional care for your new baby.',
+    images: ['https://craniomom.com/opengraph-image.jpg'],
+  },
 }
 
 export default function Layout({ children }) {
