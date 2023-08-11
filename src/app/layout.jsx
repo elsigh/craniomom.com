@@ -15,10 +15,6 @@ export const metadata = {
     url: 'https://craniomom.com',
     type: 'website',
   },
-  twitter: {
-    description: 'CranioMom - Exceptional care for your new baby.',
-    images: ['https://craniomom.com/opengraph-image.jpg'],
-  },
 }
 
 export default function Layout({ children }) {
