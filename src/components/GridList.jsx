@@ -5,7 +5,7 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 
 export function GridList({ className, children }) {
   return (
-    <FadeInStagger>
+    <FadeInStagger faster={true}>
       <ul
         role="list"
         className={clsx(
