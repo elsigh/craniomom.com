@@ -154,7 +154,9 @@ export default function Contact() {
       </FadeIn>
 
       <Container className="clear-both mt-24">
-        <FAQ />
+        <FadeIn>
+          <FAQ />
+        </FadeIn>
       </Container>
     </>
   )

@@ -100,59 +100,6 @@ function Education() {
   )
 }
 
-/*
-function Services() {
-  return (
-    <>
-      <SectionIntro
-        eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
-        </p>
-      </SectionIntro>
-      <Container className="mt-16">
-        <div className="lg:flex lg:items-center lg:justify-end">
-          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-            <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-              <StylizedImage
-                src={imageLaptop}
-                sizes="(min-width: 1024px) 41rem, 31rem"
-                className="justify-center lg:justify-end"
-              />
-            </FadeIn>
-          </div>
-          <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
-            </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
-            </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
-            </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
-            </ListItem>
-          </List>
-        </div>
-      </Container>
-    </>
-  )
-}
-*/
-
 export const metadata = {
   title: 'About',
   description: '',
@@ -169,49 +116,51 @@ export default async function About() {
         <p className="mt-8">In 2014 I became a mom.</p>
       </PageIntro>
       <Container className="mt-8">
-        <FadeIn className="lg:float-right lg:pb-12 lg:pl-8">
-          <Image src={imageTummyTime} alt="" className="lg:w-[600px]" />
-        </FadeIn>
-        <p className="mt-8 flex gap-x-2  text-neutral-950">
-          I didn’t know what a difference having trained as a craniosacral
-          practitioner would make the night I went into labor.
-        </p>
+        <FadeIn>
+          <div className="lg:float-right lg:pb-12 lg:pl-8">
+            <Image src={imageTummyTime} alt="" className="lg:w-[600px]" />
+          </div>
+          <p className="mt-8 flex gap-x-2  text-neutral-950">
+            I didn’t know what a difference having trained as a craniosacral
+            practitioner would make the night I went into labor.
+          </p>
 
-        <p className="mt-6 flex gap-x-2  text-neutral-950">
-          I began applying craniosacral therapy (CST) for healing in 1997 while
-          a pre-med student at the University of Texas, Austin. I was drawn to
-          CST because the touch is light and intended to optimize the motility
-          of the intricate web of bones, muscles, soft tissues and fluid that
-          makes us who we are. The techniques resonated with the mindfulness
-          mediation practice I was enjoying at Austin’s newly opened (San
-          Francisco’s branch) Zen Center.
-        </p>
-        <p className="mt-6 flex gap-x-2  text-neutral-950">
-          And, I always had a strong sense that I’d study craniosacral therapy
-          for the pediatric community when I became a mom. After 18 joyful years
-          of marriage, travel and moving to the San Francisco Bay area, my
-          partner and I wanted to welcome in a new journey. After 6 months of
-          actively trying to become pregnant in 2013, I got the positive
-          pregnancy test. The synchronicity of receiving that test a few days
-          before my first Upledger CST Pediatric series began meant to me that I
-          was on the right track. I work now with the pediatric community
-          because parenthood is an intricate dance of welcoming what the present
-          moment has to offer. I want to help create a world for our little ones
-          where as individuals they are in relationship with their own essence
-          and what it means to be self-regulated.
-        </p>
-        <p className="mt-6 flex gap-x-2  text-neutral-950">
-          Upon the birth of my child at home, I personally experienced the
-          profound benefit of this work. When the midwife informed us that our
-          baby had water in her lungs and we’d need to be transferred to the
-          hospital, I applied CST and the crisis unequivocally shifted. Our
-          nurse midwife’s statement, ”Whatever you just did, she’s now 100%
-          clear.” We all exhaled. I am eternally grateful for having the
-          skillset and capacity to act swiftly, clearly and turn things around
-          that night. CST has become an embodied tool that I look forward to
-          offering to you because I have faith in the easeful difference it can
-          make.
-        </p>
+          <p className="mt-6 flex gap-x-2  text-neutral-950">
+            I began applying craniosacral therapy (CST) for healing in 1997
+            while a pre-med student at the University of Texas, Austin. I was
+            drawn to CST because the touch is light and intended to optimize the
+            motility of the intricate web of bones, muscles, soft tissues and
+            fluid that makes us who we are. The techniques resonated with the
+            mindfulness mediation practice I was enjoying at Austin’s newly
+            opened (San Francisco’s branch) Zen Center.
+          </p>
+          <p className="mt-6 flex gap-x-2  text-neutral-950">
+            And, I always had a strong sense that I’d study craniosacral therapy
+            for the pediatric community when I became a mom. After 18 joyful
+            years of marriage, travel and moving to the San Francisco Bay area,
+            my partner and I wanted to welcome in a new journey. After 6 months
+            of actively trying to become pregnant in 2013, I got the positive
+            pregnancy test. The synchronicity of receiving that test a few days
+            before my first Upledger CST Pediatric series began meant to me that
+            I was on the right track. I work now with the pediatric community
+            because parenthood is an intricate dance of welcoming what the
+            present moment has to offer. I want to help create a world for our
+            little ones where as individuals they are in relationship with their
+            own essence and what it means to be self-regulated.
+          </p>
+          <p className="mt-6 flex gap-x-2  text-neutral-950">
+            Upon the birth of my child at home, I personally experienced the
+            profound benefit of this work. When the midwife informed us that our
+            baby had water in her lungs and we’d need to be transferred to the
+            hospital, I applied CST and the crisis unequivocally shifted. Our
+            nurse midwife’s statement, ”Whatever you just did, she’s now 100%
+            clear.” We all exhaled. I am eternally grateful for having the
+            skillset and capacity to act swiftly, clearly and turn things around
+            that night. CST has become an embodied tool that I look forward to
+            offering to you because I have faith in the easeful difference it
+            can make.
+          </p>
+        </FadeIn>
       </Container>
 
       <Education />
