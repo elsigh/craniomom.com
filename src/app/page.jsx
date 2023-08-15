@@ -145,9 +145,13 @@ export default async function Home() {
         tissues and fluid that makes us who we are.
       </Testimonial>
 
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <Container className="mt-24 text-center sm:mt-32 lg:mt-40">
         <FadeIn>
-          <Image src={imageBabyFlowers} alt="Baby" className="lg:w-[600px]" />
+          <Image
+            src={imageBabyFlowers}
+            alt="Baby"
+            className="m-auto lg:w-[600px]"
+          />
         </FadeIn>
       </Container>
 
