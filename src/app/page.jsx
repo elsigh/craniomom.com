@@ -5,8 +5,12 @@ import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { SectionIntro } from '@/components/SectionIntro'
+import { StylizedImage } from '@/components/StylizedImage'
+import { Testimonial } from '@/components/Testimonial'
+
 import imageBabyFlowers from '@/images/baby-flowers.jpg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
+import imageNewBaby from '@/images/new-baby.jpg'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -102,7 +106,6 @@ function CaseStudies({ caseStudies }) {
   )
 }
 
-import imageMomAndBaby from '@/images/mom-and-baby.jpg'
 export const metadata = {
   description:
     'Angela Pater is a nationally certified massage therapist focused on craniosacral therapy for infant care.',
@@ -113,17 +116,14 @@ export default async function Home() {
     <>
       <Container className="mt-24">
         <FadeIn className="max-w-3xl">
-          <h1 className="sm:text-7 mb-8 font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance]">
+          <h1 className="mb-12 font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
             Exceptional care for your new baby.
           </h1>
-          <Image src={imageMomAndBaby} alt="" className="lg:w-[600px]" />
-          {/*
           <StylizedImage
-            {...imageMomAndBaby}
+            {...imageNewBaby}
             sizes="(min-width: 1024px) 41rem, 31rem"
             className="justify-center lg:justify-end lg:group-even/section:justify-start"
           />
-          */}
           <p className="mt-12 text-xl text-neutral-600">
             Angela Pater is a nationally certified massage therapist focused on
             craniosacral therapy for infant care.
@@ -136,17 +136,16 @@ export default async function Home() {
         </FadeIn>
       </Container>
 
-      {/*
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={false && { name: 'Phobia', logo: logoPhobiaDark }}
       >
-        Angela’s work is amazing - she has a real gift for working with babies
-        (and new parents!) and I can’t recommend her highly enough.
+        The therapist’s touch is light with craniosacral therapy and intended to
+        optimize freedom within the intricate web of bones, muscles, soft
+        tissues and fluid that makes us who we are.
       </Testimonial>
-      */}
 
-      <Container className="sm:mt-18 mt-12">
+      <Container className="mt-24 sm:mt-32 lg:mt-40">
         <FadeIn>
           <Image src={imageBabyFlowers} alt="Baby" className="lg:w-[600px]" />
         </FadeIn>

@@ -6,7 +6,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
 import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
-import imageTummyTime from '@/images/tummy-time.jpg'
+import imageMomAndBaby from '@/images/mom-and-baby.jpg'
 
 function Education() {
   return (
@@ -118,7 +118,7 @@ export default async function About() {
       <Container className="mt-8">
         <FadeIn>
           <div className="lg:float-right lg:pb-12 lg:pl-8">
-            <Image src={imageTummyTime} alt="" className="lg:w-[600px]" />
+            <Image src={imageMomAndBaby} alt="" className="lg:w-[600px]" />
           </div>
           <p className="mt-8 flex gap-x-2  text-neutral-950">
             I didn’t know what a difference having trained as a craniosacral
