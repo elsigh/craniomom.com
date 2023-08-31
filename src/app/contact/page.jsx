@@ -3,9 +3,11 @@ import Link from 'next/link'
 
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
+import { ContactForm } from '@/components/ContactForm'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
+
 import imageMomToBe from '@/images/mom-to-be.jpg'
 
 function ContactDetails() {
@@ -153,7 +155,13 @@ export default function Contact() {
         </div>
       </FadeIn>
 
-      <Container className="clear-both mt-24">
+      <Container className="clear-both mt-24 sm:mt-32 lg:mt-40">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
+          <ContactForm />
+        </div>
+      </Container>
+
+      <Container className="clear-both mt-24 sm:mt-32 lg:mt-40">
         <FadeIn>
           <FAQ />
         </FadeIn>

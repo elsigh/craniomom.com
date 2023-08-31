@@ -104,7 +104,7 @@ export const metadata = {
   title: 'About',
   description: '',
 }
-
+//  lg:mt-[-240px]
 export default async function About() {
   return (
     <>
