@@ -147,19 +147,19 @@ export default function Contact() {
             Book a Session
           </Button>
         </Container>
+
+        <Container className="mt-10">
+          <div className="lg:w-[550px]">
+            <ContactForm />
+          </div>
+        </Container>
       </FadeIn>
 
       <FadeIn>
-        <div className="sm:mt-12 sm:px-8 lg:float-right lg:mr-16 lg:mt-[-240px] lg:w-[340px] lg:px-0 lg:pb-12">
+        <div className="sm:mt-12 sm:px-8 lg:float-right lg:mr-16 lg:mt-[-710px] lg:w-[340px] lg:px-0 lg:pb-12">
           <Image src={imageMomToBe} alt="" />
         </div>
       </FadeIn>
-
-      <Container className="clear-both mt-24 sm:mt-32 lg:mt-40">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
-          <ContactForm />
-        </div>
-      </Container>
 
       <Container className="clear-both mt-24 sm:mt-32 lg:mt-40">
         <FadeIn>

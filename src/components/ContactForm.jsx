@@ -81,7 +81,7 @@ export function ContactForm() {
           <TextInput label="Message" name="message" />
         </div>
         <Button disabled={pending} type="submit" className="mt-10">
-          {pending ? 'Sending...' : 'Send'}
+          {pending ? 'Sending...' : 'Send a message'}
         </Button>
         {error && <p className="mt-4 text-red-500">{error}</p>}
       </form>
