@@ -1,9 +1,7 @@
 'use client'
 
-import { useId, useState } from 'react'
-import { experimental_useFormStatus as useFormStatus } from 'react-dom'
-
-import { redirect } from 'next/navigation'
+import { useId } from 'react'
+import { useFormState, useFormStatus } from 'react-dom'
 
 import { Button } from '@/components/Button'
 import { FadeIn } from '@/components/FadeIn'
@@ -45,20 +43,12 @@ function RadioInput({ label, ...props }) {
   )
 }
 export function ContactForm() {
-  const { pending } = useFormStatus()
-  const [error, setError] = useState('')
-  const send = async (formData) => {
-    const { sent, error } = await sendContactEmail(formData)
-    console.debug('action send', { sent, error })
-    if (sent) {
-      redirect('/contact/thanks')
-      return
-    }
-    setError(error)
-  }
+  const [{ error }, formAction] = useFormState(sendContactEmail, {
+    error: null,
+  })
   return (
     <FadeIn className="lg:order-last">
-      <form action={send}>
+      <form action={formAction}>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Contact Angela
         </h2>
@@ -80,11 +70,18 @@ export function ContactForm() {
           />
           <TextInput label="Message" name="message" />
         </div>
-        <Button disabled={pending} type="submit" className="mt-10">
-          {pending ? 'Sending...' : 'Send a message'}
-        </Button>
+        <SubmitButton />
         {error && <p className="mt-4 text-red-500">{error}</p>}
       </form>
     </FadeIn>
+  )
+}
+
+function SubmitButton() {
+  const { pending } = useFormStatus()
+  return (
+    <Button disabled={pending} type="submit" className="mt-10">
+      {pending ? 'Sending...' : 'Send a message'}
+    </Button>
   )
 }
