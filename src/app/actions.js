@@ -20,9 +20,9 @@ export async function sendContactEmail(prevState, formData) {
       subject: 'Contact from website',
       react: EmailTemplate({ from, message, name, phone }),
     })
-    redirect('/contact/thanks')
   } catch (error) {
     console.error(error)
     return { error }
   }
+  redirect('/contact/thanks')
 }
