@@ -1,7 +1,7 @@
 'use client'
 
-import { useId } from 'react'
-import { useFormStatus } from 'react-dom';
+import { useActionState, useId } from 'react'
+import { useFormStatus } from 'react-dom'
 
 import { Button } from '@/components/Button'
 import { FadeIn } from '@/components/FadeIn'
@@ -9,7 +9,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { sendContactEmail } from '@/app/actions'
 
 function TextInput({ label, ...props }) {
-  let id = useId()
+  const id = useId()
 
   return (
     <div className="group relative z-0 transition-all focus-within:z-10">
