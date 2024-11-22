@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,7 +14,7 @@
     "@leafac/rehype-shiki": "^2.2.1",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
-    "@next/mdx": "^13.4.8",
+    "@next/mdx": "15.0.4-canary.23",
     "@vercel/analytics": "^1.0.2",
     "acorn": "^8.10.0",
     "acorn-jsx": "^5.3.2",
@@ -25,10 +25,10 @@
     "fast-glob": "^3.2.12",
     "focus-visible": "^5.2.0",
     "framer-motion": "^10.12.16",
-    "next": "canary",
+    "next": "15.0.4-canary.23",
     "postcss-focus-visible": "^6.0.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "19.0.0-rc-380f5d67-20241113",
+    "react-dom": "19.0.0-rc-380f5d67-20241113",
     "recma-import-images": "0.0.3",
     "remark-gfm": "^3.0.1",
     "remark-rehype-wrap": "0.0.3",
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "eslint": "8.26.0",
-    "eslint-config-next": "13.4.12",
+    "eslint-config-next": "15.0.4-canary.23",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.6"
   }

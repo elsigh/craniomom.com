@@ -47,7 +47,7 @@ const faqs = [
   {
     question: 'What should I expect during the session?',
     answer:
-      'Initial visits for babies with feeding concerns are 75 minutes. New patient forms must be completed prior to the visit. Angela will perform a simple intake, detailed physical and oral motor exam including a tongue-tie exam. She will give parents exercises for a home program as well as treat the baby with craniosacral therapy.  Craniosacral is not covered by insurance.',
+      'Initial visits for babies with feeding concerns are 75 minutes. New patient forms must be completed prior to the visit. Angela will perform a simple intake, detailed physical and oral motor exam including a tongue-tie check. She will give parents exercises for a home program as well as treat the baby with craniosacral therapy.  Craniosacral is not covered by insurance.',
   },
   {
     question: 'Do you see patients in San Francisco?',

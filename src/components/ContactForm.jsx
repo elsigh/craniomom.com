@@ -1,7 +1,7 @@
 'use client'
 
 import { useId } from 'react'
-import { useFormState, useFormStatus } from 'react-dom'
+import { useFormStatus } from 'react-dom';
 
 import { Button } from '@/components/Button'
 import { FadeIn } from '@/components/FadeIn'
@@ -43,7 +43,7 @@ function RadioInput({ label, ...props }) {
   )
 }
 export function ContactForm() {
-  const [{ error }, formAction] = useFormState(sendContactEmail, {
+  const [{ error }, formAction] = useActionState(sendContactEmail, {
     error: null,
   })
   return (

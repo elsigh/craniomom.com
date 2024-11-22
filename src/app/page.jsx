@@ -108,7 +108,7 @@ function CaseStudies({ caseStudies }) {
 
 export const metadata = {
   description:
-    'Angela Pater is a nationally certified massage therapist focused on craniosacral therapy for infant care.',
+    'Angela Pater is a nationally certified massage therapist focused on craniosacral therapy for infant care.'
 }
 
 export default async function Home() {

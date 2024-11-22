@@ -21,5 +21,5 @@ export async function loadMDXMetadata(directory) {
         }
       })
     )
-  ).sort((a, b) => b.date.localeCompare(a.date))
+  ).sort((a, b) => b.date.localeCompare(a.date));
 }

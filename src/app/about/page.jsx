@@ -94,6 +94,11 @@ function Education() {
             Mindfulness Training Institute - Mark Coleman and Marin Aylward -
             Sept 2022 - June 2023
           </GridListItem>
+          <GridListItem title="CSISC: CranioSacral Therapy for Infants" invert>
+            CSISC: CranioSacral Therapy for Infants with Special Circumstances;
+            NICU babies - Upledger Institues’s Karen Quraishy, MSPT, CST-D -
+            April 26- 28, 2024
+          </GridListItem>
         </GridList>
       </Container>
     </div>
