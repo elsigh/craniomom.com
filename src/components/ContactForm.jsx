@@ -43,7 +43,7 @@ function RadioInput({ label, ...props }) {
   )
 }
 export function ContactForm() {
-  const [{ error }, formAction] = useActionState(sendContactEmail, {
+  const [{ error, inputs }, formAction] = useActionState(sendContactEmail, {
     error: null,
   })
   return (
@@ -53,13 +53,20 @@ export function ContactForm() {
           Contact Angela
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" required />
+          <TextInput
+            label="Name"
+            name="name"
+            autoComplete="name"
+            required
+            value={inputs?.name}
+          />
           <TextInput
             label="Email"
             type="email"
             name="email"
             autoComplete="email"
             required
+            value={inputs?.email}
           />
           <TextInput
             label="Phone"
@@ -67,8 +74,9 @@ export function ContactForm() {
             name="phone"
             autoComplete="tel"
             required
+            value={inputs?.phone}
           />
-          <TextInput label="Message" name="message" />
+          <TextInput label="Message" name="message" value={inputs?.message} />
         </div>
         <SubmitButton />
         {error && <p className="mt-4 text-red-500">{error}</p>}

@@ -17,7 +17,7 @@ function ContactDetails() {
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Email:{' '}
           <Link
-            href={`mailto:info@craniomom.com`}
+            href={'mailto:info@craniomom.com'}
             className="text-neutral-600 hover:text-neutral-950"
           >
             info@craniomom.com
@@ -99,7 +99,7 @@ function FAQ() {
         <p className="mt-4 text-base leading-7 text-gray-600">
           Feel free to reach out to me at{' '}
           <Link
-            href={`mailto:info@craniomom.com`}
+            href={'mailto:info@craniomom.com'}
             className="text-neutral-600 hover:text-neutral-950"
           >
             info@craniomom.com
