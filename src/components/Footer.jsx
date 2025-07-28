@@ -15,6 +15,9 @@ const navigation = [
   },
 ]
 
+// Calculate the current year on the server side
+const currentYear = new Date().getFullYear()
+
 function Navigation() {
   return (
     <nav>
@@ -100,7 +103,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © CranioMom. {new Date().getFullYear()}
+            © CranioMom. {currentYear}
           </p>
         </div>
       </FadeIn>

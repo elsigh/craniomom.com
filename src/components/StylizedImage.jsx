@@ -24,6 +24,9 @@ export function StylizedImage({ shape = 0, className, ...props }) {
   let id = useId()
   let { width, height, path } = shapes[shape]
 
+  // Filter out props that React doesn't recognize on DOM elements
+  const { blurWidth, blurHeight, ...imageProps } = props
+
   return (
     <div
       className={clsx(
@@ -39,7 +42,7 @@ export function StylizedImage({ shape = 0, className, ...props }) {
                 alt=""
                 className="w-full bg-neutral-100 object-cover"
                 style={{ aspectRatio: `${width} / ${height}` }}
-                {...props}
+                {...imageProps}
               />
             </foreignObject>
           </g>

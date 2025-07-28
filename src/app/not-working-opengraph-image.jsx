@@ -16,6 +16,10 @@ export default async function Image() {
       new URL('./../images/og.jpg', import.meta.url)
     ).then((res) => res.arrayBuffer())
 
+    // Convert ArrayBuffer to base64 data URL for proper img src
+    const base64 = Buffer.from(imageData).toString('base64')
+    const dataUrl = `data:image/jpeg;base64,${base64}`
+
     return new ImageResponse(
       (
         <div
@@ -43,7 +47,7 @@ export default async function Image() {
             <img
               width={size.width}
               height={size.height}
-              src={imageData}
+              src={dataUrl}
               alt=""
             />
           </div>
