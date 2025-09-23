@@ -20,6 +20,11 @@ function Education() {
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
+          <GridListItem title="TBSP1" invert>
+            The Brain Speaks 1: CranioSacral Therapy Techniques for Listening to
+            and Working with the Brain - Upledger Institute's Avadhan Larson,
+            LMT, LAc, CST-D, June 12- 15, 2025.
+          </GridListItem>
           <GridListItem title="CCPB1" invert>
             CranioSacral Applications for Conception, Pregnancy and Birthing 1 -
             Upledger Institute’s Carol McLellan CMT, CST-D - August 1-4, 2013
