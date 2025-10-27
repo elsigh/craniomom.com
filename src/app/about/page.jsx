@@ -22,7 +22,7 @@ function Education() {
         <GridList>
           <GridListItem title="TBSP1" invert>
             The Brain Speaks 1: CranioSacral Therapy Techniques for Listening to
-            and Working with the Brain - Upledger Institute's Avadhan Larson,
+            and Working with the Brain - Upledger Institute&apos;s Avadhan Larson,
             LMT, LAc, CST-D, June 12- 15, 2025.
           </GridListItem>
           <GridListItem title="CCPB1" invert>
