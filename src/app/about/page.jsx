@@ -112,7 +112,7 @@ function Education() {
 
 export const metadata = {
   title: 'About',
-  description: '',
+  description: 'Angela Pater is a nationally certified massage therapist with over 25 years of experience, specializing in craniosacral therapy for infants and pediatric care.',
 }
 //  lg:mt-[-240px]
 export default async function About() {
@@ -128,7 +128,7 @@ export default async function About() {
       <Container className="mt-8">
         <FadeIn>
           <div className="lg:float-right lg:pb-12 lg:pl-8">
-            <Image src={imageMomAndBaby} alt="" className="lg:w-[600px]" />
+            <Image src={imageMomAndBaby} alt="Mother holding and looking lovingly at her baby" className="lg:w-[600px]" />
           </div>
           <p className="mt-8 flex gap-x-2  text-neutral-950">
             I didn’t know what a difference having trained as a craniosacral

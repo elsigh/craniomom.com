@@ -157,7 +157,7 @@ export default function Contact() {
 
       <FadeIn>
         <div className="sm:mt-12 sm:px-8 lg:float-right lg:mr-16 lg:mt-[-710px] lg:w-[340px] lg:px-0 lg:pb-12">
-          <Image src={imageMomToBe} alt="" />
+          <Image src={imageMomToBe} alt="Pregnant woman holding her belly" />
         </div>
       </FadeIn>
 

@@ -23,7 +23,7 @@ export async function sendContactEmail(prevState, formData) {
     }
 
     //validate email
-    const emailableUrl = `https://api.emailable.com/v1/verify?email=elsigh@gmail.com&api_key=${process.env.EMAILABLE}&email=${from}&timeout=10`
+    const emailableUrl = `https://api.emailable.com/v1/verify?api_key=${process.env.EMAILABLE}&email=${from}&timeout=10`
     const emailableResponse = await fetch(emailableUrl, { cache: 'no-store' })
     const emailableData = await emailableResponse.json()
     console.debug('emailableData', emailableData)
