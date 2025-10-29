@@ -148,11 +148,8 @@ function RootLayoutInner({ children }) {
   let closeRef = useRef()
   let navRef = useRef()
   let shouldReduceMotion = useReducedMotion()
-  let [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
-    setIsClient(true)
-
     function onClick(event) {
       if (event.target.closest('a')?.href === window.location.href) {
         setExpanded(false)
@@ -167,7 +164,7 @@ function RootLayoutInner({ children }) {
   }, [])
 
   return (
-    <MotionConfig transition={isClient && shouldReduceMotion ? { duration: 0 } : undefined}>
+    <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
       <header>
         <div
           className="absolute left-0 right-0 top-2 z-40 pt-14"
