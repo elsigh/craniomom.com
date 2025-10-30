@@ -123,6 +123,7 @@ export default async function Home() {
             {...imageNewBaby}
             sizes="(min-width: 1024px) 41rem, 31rem"
             className="justify-center lg:justify-end lg:group-even/section:justify-start"
+            priority
           />
           <p className="mt-12 text-xl text-neutral-600">
             Angela Pater is a nationally certified massage therapist focused on
