@@ -20,7 +20,9 @@ export const metadata = {
     url: 'https://www.craniomom.com',
     type: 'website',
   },
+}
 
+export const viewport = {
   themeColor: '#0a0a0a',
 }
 
