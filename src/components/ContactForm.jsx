@@ -1,12 +1,38 @@
 'use client'
 
-import { useActionState, useId } from 'react'
+import { useActionState, useEffect, useId, useRef } from 'react'
 import { useFormStatus } from 'react-dom'
 
 import { Button } from '@/components/Button'
 import { FadeIn } from '@/components/FadeIn'
 
 import { sendContactEmail } from '@/app/actions'
+
+function Spinner({ className }) {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <circle
+        className="opacity-25"
+        cx="12"
+        cy="12"
+        r="10"
+        stroke="currentColor"
+        strokeWidth="4"
+      />
+      <path
+        className="opacity-75"
+        fill="currentColor"
+        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+      />
+    </svg>
+  )
+}
 
 function TextInput({ label, ...props }) {
   const id = useId()
@@ -45,9 +71,18 @@ export function ContactForm() {
   const [{ error, inputs }, formAction] = useActionState(sendContactEmail, {
     error: null,
   })
+  const formRef = useRef(null)
+
+  useEffect(() => {
+    if (error && formRef.current) {
+      const firstInput = formRef.current.querySelector('input')
+      firstInput?.focus()
+    }
+  }, [error])
+
   return (
     <FadeIn className="lg:order-last">
-      <form action={formAction}>
+      <form ref={formRef} action={formAction}>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Contact Angela
         </h2>
@@ -72,10 +107,11 @@ export function ContactForm() {
             type="tel"
             name="phone"
             autoComplete="tel"
+            inputMode="tel"
             required
             value={inputs?.phone}
           />
-          <TextInput label="Message" name="message" value={inputs?.message} />
+          <TextInput label="Message" name="message" required value={inputs?.message} />
         </div>
         <SubmitButton />
         {error && <p className="mt-4 text-red-500">{error}</p>}
@@ -88,7 +124,8 @@ function SubmitButton() {
   const { pending } = useFormStatus()
   return (
     <Button disabled={pending} type="submit" className="mt-10">
-      {pending ? 'Sending...' : 'Send a message'}
+      {pending && <Spinner className="mr-2 h-4 w-4 animate-spin" />}
+      Send a message
     </Button>
   )
 }

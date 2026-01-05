@@ -20,6 +20,8 @@ export const metadata = {
     url: 'https://www.craniomom.com',
     type: 'website',
   },
+
+  themeColor: '#0a0a0a',
 }
 
 const protectedRoutes = [
@@ -36,6 +38,12 @@ export default function Layout({ children }) {
         <BotIdClient protect={protectedRoutes} />
       </head>
       <body className="flex min-h-full flex-col">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-white focus:p-4 focus:text-neutral-950"
+        >
+          Skip to content
+        </a>
         <RootLayout>{children}</RootLayout>
         <Analytics />
         <SpeedInsights />

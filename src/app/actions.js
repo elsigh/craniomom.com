@@ -10,7 +10,7 @@ export async function sendContactEmail(prevState, formData) {
   const verification = await checkBotId()
   
   if (verification.isBot) {
-    return { error: 'Access denied', inputs: {} }
+    return { error: 'Unable to process your request. Please try again.', inputs: {} }
   }
   try {
     const from = formData.get('email')
@@ -18,8 +18,13 @@ export async function sendContactEmail(prevState, formData) {
     const phone = formData.get('phone')
     const message = formData.get('message')
     const inputs = { email: from, name, phone, message }
-    if (!from || !name || !phone || !message) {
-      return { error: 'Please fill out all fields', inputs }
+    const missing = []
+    if (!name) missing.push('name')
+    if (!from) missing.push('email')
+    if (!phone) missing.push('phone')
+    if (!message) missing.push('message')
+    if (missing.length) {
+      return { error: `Please provide your ${missing.join(', ')}`, inputs }
     }
 
     //validate email
@@ -28,7 +33,7 @@ export async function sendContactEmail(prevState, formData) {
     const emailableData = await emailableResponse.json()
     console.debug('emailableData', emailableData)
     if (emailableData.state !== 'deliverable') {
-      return { error: 'Invalid email address', inputs }
+      return { error: 'This email address appears invalid. Please check for typos or use a different email.', inputs }
     }
 
     const data = await resend.emails.send({
