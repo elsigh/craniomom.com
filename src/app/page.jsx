@@ -51,8 +51,10 @@ export default async function Home() {
         <FadeIn>
           <Image
             src={imageBabyFlowers}
-            alt="Baby"
-            className="m-auto lg:w-[600px]"
+            alt="Baby with flowers"
+            width={600}
+            height={400}
+            className="m-auto"
           />
         </FadeIn>
       </Container>
