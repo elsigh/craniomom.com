@@ -55,6 +55,7 @@ export default async function Home() {
             width={600}
             height={400}
             className="m-auto"
+            style={{ height: "auto" }}
           />
         </FadeIn>
       </Container>
