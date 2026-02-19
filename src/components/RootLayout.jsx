@@ -11,6 +11,7 @@ import {
     useId,
     useRef,
     useState,
+    useSyncExternalStore,
 } from 'react'
 
 import { Button } from '@/components/Button'
@@ -20,6 +21,11 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 
 const RootLayoutContext = createContext({})
+const emptySubscribe = () => () => {}
+
+function useIsClient() {
+  return useSyncExternalStore(emptySubscribe, () => true, () => false)
+}
 
 function XIcon(props) {
   return (
@@ -148,11 +154,9 @@ function RootLayoutInner({ children }) {
   let closeRef = useRef()
   let navRef = useRef()
   let shouldReduceMotion = useReducedMotion()
-  let [isClient, setIsClient] = useState(false)
+  let isClient = useIsClient()
 
   useEffect(() => {
-    setIsClient(true)
-
     function onClick(event) {
       if (event.target.closest('a')?.href === window.location.href) {
         setExpanded(false)

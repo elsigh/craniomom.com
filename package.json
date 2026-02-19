@@ -10,11 +10,11 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@calcom/embed-react": "^1.5.1",
+    "@calcom/embed-react": "^1.5.3",
     "@leafac/rehype-shiki": "^2.2.1",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
-    "@next/mdx": "16.0.0",
+    "@next/mdx": "16.1.6",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.2.0",
     "acorn": "^8.14.0",
@@ -26,11 +26,11 @@
     "escape-string-regexp": "^5.0.0",
     "fast-glob": "^3.3.2",
     "focus-visible": "^5.2.1",
-    "framer-motion": "^10.18.0",
-    "next": "16.0.9",
+    "framer-motion": "^12.34.2",
+    "next": "16.1.6",
     "postcss-focus-visible": "^6.0.4",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
     "recma-import-images": "0.0.3",
     "remark-gfm": "^3.0.1",
     "remark-rehype-wrap": "0.0.3",
@@ -43,7 +43,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "eslint": "^9.38.0",
-    "eslint-config-next": "16.0.0",
+    "eslint-config-next": "16.1.6",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8"
   }
