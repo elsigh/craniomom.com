@@ -92,7 +92,7 @@ function FAQ() {
       <div className="lg:col-span-5">
         <h2
           id="faq"
-          className="text-2xl font-bold leading-10 tracking-tight text-gray-900"
+          className="text-2xl leading-10 font-bold tracking-tight text-gray-900"
         >
           Frequently asked questions
         </h2>
@@ -111,7 +111,7 @@ function FAQ() {
         <dl className="space-y-10">
           {faqs.map((faq) => (
             <div key={faq.question}>
-              <dt className="text-base font-semibold leading-7 text-gray-900">
+              <dt className="text-base leading-7 font-semibold text-gray-900">
                 {faq.question}
               </dt>
               <dd className="mt-2 text-base leading-7 text-gray-600">
@@ -156,8 +156,12 @@ export default function Contact() {
       </FadeIn>
 
       <FadeIn>
-        <div className="sm:mt-12 sm:px-8 lg:float-right lg:mr-16 lg:mt-[-710px] lg:w-[340px] lg:px-0 lg:pb-12">
-          <Image src={imageMomToBe} alt="Pregnant woman holding her belly" />
+        <div className="sm:mt-12 sm:px-8 lg:float-right lg:mt-[-710px] lg:mr-16 lg:w-[340px] lg:px-0 lg:pb-12">
+          <Image
+            src={imageMomToBe}
+            alt="Pregnant woman holding her belly"
+            loading="eager"
+          />
         </div>
       </FadeIn>
 
