@@ -1,0 +1,21 @@
+pnpm-workspace.yaml
+  s_ceb0000026df34::t_b20c632991ed4a 4-9
+pnpm-lock.yaml
+  s_ceb0000026df34::t_5548caae517068 7-13,1411-1412,1631-1634,1800-1801,3320,3790,3794,4023-4024,4028,4163,4165,4193
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "2489827e767f6c8170fc5a7a5903744bb2dc7422",
+  "prompts": {},
+  "sessions": {
+    "s_ceb0000026df34": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f706f-f912-7c22-9efb-9d46edff970d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "elsigh <elsigh@gmail.com>"
+    }
+  }
+}
