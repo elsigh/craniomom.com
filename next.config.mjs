@@ -4,6 +4,7 @@ import { withBotId } from 'botid/next/config'
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   cacheComponents: true,
+  partialPrefetching: true,
 }
 
 export default withBotId(nextConfig)
