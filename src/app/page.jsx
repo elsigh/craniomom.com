@@ -36,6 +36,9 @@ export default async function Home() {
             experience, and my personal journey that supports me in supporting
             you.
           </p>
+          <p className="mt-6 text-xl text-neutral-600">
+            Local harness smoke test
+          </p>
         </FadeIn>
       </Container>
 
