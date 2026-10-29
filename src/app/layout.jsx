@@ -42,7 +42,7 @@ export default function Layout({ children }) {
       <body className="flex min-h-full flex-col">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-white focus:p-4 focus:text-neutral-950"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-100 focus:bg-white focus:p-4 focus:text-neutral-950"
         >
           Skip to content
         </a>
