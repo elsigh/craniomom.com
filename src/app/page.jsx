@@ -19,7 +19,7 @@ export default async function Home() {
     <>
       <Container className="mt-24">
         <FadeIn className="max-w-3xl">
-          <h1 className="mb-12 font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+          <h1 className="mb-12 font-display text-5xl font-medium tracking-tight text-neutral-950 text-balance sm:text-7xl">
             Exceptional care for your new baby.
           </h1>
           <StylizedImage
