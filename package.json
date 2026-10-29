@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint ."
+    "start": "next start"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
+    "@react-email/render": "^2.2.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
@@ -24,8 +24,6 @@
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "eslint": "^10.13.0",
-    "eslint-config-next": "16.4.3",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1"
   }
