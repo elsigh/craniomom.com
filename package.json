@@ -10,18 +10,18 @@
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
     "@react-email/render": "^2.2.0",
-    "@tailwindcss/postcss": "^4.3.3",
+    "@tailwindcss/postcss": "^4.3.4",
     "@vercel/analytics": "^2.0.1",
-    "@vercel/speed-insights": "^2.0.0",
+    "@vercel/speed-insights": "^2.1.0",
     "botid": "^1.5.12",
     "clsx": "^2.1.1",
-    "motion": "^14.7.1",
-    "next": "16.4.3",
+    "motion": "^14.9.1",
+    "next": "16.4.5",
     "postcss": "^8.5.32",
     "react": "19.3.1",
     "react-dom": "19.3.1",
-    "resend": "^6.35.0",
-    "tailwindcss": "^4.3.3"
+    "resend": "^6.37.0",
+    "tailwindcss": "^4.3.4"
   },
   "devDependencies": {
     "prettier": "^3.9.10",

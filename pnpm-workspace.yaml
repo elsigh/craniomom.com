@@ -1,0 +1,2 @@
+minimumReleaseAgeExclude:
+  - '@vercel/speed-insights@2.1.0'
