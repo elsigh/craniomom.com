@@ -21,88 +21,136 @@ function Education() {
       <Container className="mt-16">
         <GridList>
           <GridListItem title="TBSP1" invert>
-            The Brain Speaks 1: CranioSacral Therapy Techniques for Listening to
-            and Working with the Brain - Upledger Institute&apos;s Avadhan Larson,
-            LMT, LAc, CST-D, June 12- 15, 2025.
+            <span className="block">
+              The Brain Speaks 1: CranioSacral Therapy Techniques for Listening
+              to and Working with the Brain
+            </span>
+            <span className="block">
+              Upledger Institute’s Avadhan Larson, LMT, LAc, CST-D
+            </span>
+            <span className="block text-neutral-500">June 12–15, 2025</span>
           </GridListItem>
           <GridListItem title="CCPB1" invert>
-            CranioSacral Applications for Conception, Pregnancy and Birthing 1 -
-            Upledger Institute’s Carol McLellan CMT, CST-D - August 1-4, 2013
+            <span className="block">
+              CranioSacral Applications for Conception, Pregnancy and Birthing 1
+            </span>
+            <span className="block">
+              Upledger Institute’s Carol McLellan, CMT, CST-D
+            </span>
+            <span className="block text-neutral-500">August 1–4, 2013</span>
           </GridListItem>
           <GridListItem title="TummyTime Training for Professionals" invert>
-            Michelle Price Emanuel, OTR/L, CST, CIMI, NBCR, RYT200 - Feb 28 -
-            Mar 2, 2014
+            <span className="block">
+              Michelle Price Emanuel, OTR/L, CST, CIMI, NBCR, RYT200
+            </span>
+            <span className="block text-neutral-500">Feb 28 – Mar 2, 2014</span>
           </GridListItem>
           <GridListItem title="Craniosacral Therapy for Infants" invert>
-            Carol Gray, LMT, CST, RPYT - Oct 20-24, 2014
+            <span className="block">Carol Gray, LMT, CST, RPYT</span>
+            <span className="block text-neutral-500">Oct 20–24, 2014</span>
           </GridListItem>
           <GridListItem
             title="Craniosacral Therapy for Infant Breastfeeding"
             invert
           >
-            Dr. Alison Hazelbaker - August 3-7, 2015
+            <span className="block">Dr. Alison Hazelbaker</span>
+            <span className="block text-neutral-500">August 3–7, 2015</span>
           </GridListItem>
           <GridListItem
             title="Cranial Nerve Dysfunction (CND) in the Newborn to Precrawling Infant"
             invert
           >
-            Michelle Price Emanuel, OTR/L, CST, CIMI, NBCR, RYT200 - Oct 20-22,
-            2016.
+            <span className="block">
+              Michelle Price Emanuel, OTR/L, CST, CIMI, NBCR, RYT200
+            </span>
+            <span className="block text-neutral-500">Oct 20–22, 2016</span>
           </GridListItem>
           <GridListItem title="Infant & Maternal CST Conference" invert>
-            Carol Gray, LMT, CST, RPYT - Sept. 13-17, 2016.
+            <span className="block">Carol Gray, LMT, CST, RPYT</span>
+            <span className="block text-neutral-500">Sept 13–17, 2016</span>
           </GridListItem>
           <GridListItem
-            title="NM1: Neural Manipulation: Neuromeningeal Manipulation; An Integrative Approach to Trauma"
+            title="NM1: Neural Manipulation: Neuromeningeal Manipulation"
             invert
           >
-            International Association of Healthcare Practioner’s Lisa Polec, DC,
-            BI-D - Sept 9-11, 2016.
+            <span className="block">An Integrative Approach to Trauma</span>
+            <span className="block">
+              International Association of Healthcare Practitioners, Lisa Polec,
+              DC, BI-D
+            </span>
+            <span className="block text-neutral-500">Sept 9–11, 2016</span>
           </GridListItem>
           <GridListItem title="VM1: Visceral Manipulation: Abdomen 1" invert>
-            Barral Institute’s Dee Dettmann Ahern, PT, BI-D - Oct 9-14, 2016
+            <span className="block">
+              Barral Institute’s Dee Dettmann Ahern, PT, BI-D
+            </span>
+            <span className="block text-neutral-500">Oct 9–14, 2016</span>
           </GridListItem>
           <GridListItem title="VM2: Visceral Manipulation: Abdomen 2" invert>
-            Barral Institute’s Dee Dettmann Ahern, PT, BI-D - Nov 6-11, 2016
+            <span className="block">
+              Barral Institute’s Dee Dettmann Ahern, PT, BI-D
+            </span>
+            <span className="block text-neutral-500">Nov 6–11, 2016</span>
           </GridListItem>
           <GridListItem title="VM3: Visceral Manipulation: The Pelvis" invert>
-            Barral Institute’s Dee Dettmann Ahern, PT, BI-D - August 20-25, 2017
+            <span className="block">
+              Barral Institute’s Dee Dettmann Ahern, PT, BI-D
+            </span>
+            <span className="block text-neutral-500">Aug 20–25, 2017</span>
           </GridListItem>
           <GridListItem
             title="LT1: Visceral Manipulation: Listening Techniques 1"
             invert
           >
-            An Integrative Approach to Evaluation - CaGail Wetzler, PT, DPT,
-            EDO, BI-D - Jan 19-21, 2018
+            <span className="block">An Integrative Approach to Evaluation</span>
+            <span className="block">CaGail Wetzler, PT, DPT, EDO, BI-D</span>
+            <span className="block text-neutral-500">Jan 19–21, 2018</span>
           </GridListItem>
           <GridListItem
             title="CI-CRBMT: Clinical Interventions: Concussion Recovery"
             invert
           >
-            Barral Manual Therapy CI-CRBMT - Gail Wetzler, PT, DPT, EDO, BI-D -
-            Sept 13-15, 2019
+            <span className="block">
+              Barral Manual Therapy CI-CRBMT, Gail Wetzler, PT, DPT, EDO, BI-D
+            </span>
+            <span className="block text-neutral-500">Sept 13–15, 2019</span>
           </GridListItem>
           <GridListItem
             title="VM4-VC: Visceral Manipulation: The Thorax"
             invert
           >
-            Barral Instutute’s Wetzler, Frey - June 12-13, 2020
+            <span className="block">Barral Institute’s Wetzler and Frey</span>
+            <span className="block text-neutral-500">June 12–13, 2020</span>
           </GridListItem>
           <GridListItem
             title="LT2: Visceral Manipulation: Listening Techniques 2"
             invert
           >
-            An Advanced Evaluation Approach to Total Body Systems - Upledger
-            Institues’s Gail Wetzler, PT, DPT, EDO, BI-D - Oct 1-3, 2020
+            <span className="block">
+              An Advanced Evaluation Approach to Total Body Systems
+            </span>
+            <span className="block">
+              Upledger Institute’s Gail Wetzler, PT, DPT, EDO, BI-D
+            </span>
+            <span className="block text-neutral-500">Oct 1–3, 2020</span>
           </GridListItem>
           <GridListItem title="Mindfulness Teacher Training" invert>
-            Mindfulness Training Institute - Mark Coleman and Marin Aylward -
-            Sept 2022 - June 2023
+            <span className="block">
+              Mindfulness Training Institute, Mark Coleman and Marin Aylward
+            </span>
+            <span className="block text-neutral-500">
+              Sept 2022 – June 2023
+            </span>
           </GridListItem>
           <GridListItem title="CSISC: CranioSacral Therapy for Infants" invert>
-            CSISC: CranioSacral Therapy for Infants with Special Circumstances;
-            NICU babies - Upledger Institues’s Karen Quraishy, MSPT, CST-D -
-            April 26- 28, 2024
+            <span className="block">
+              CSISC: CranioSacral Therapy for Infants with Special
+              Circumstances; NICU babies
+            </span>
+            <span className="block">
+              Upledger Institute’s Karen Quraishy, MSPT, CST-D
+            </span>
+            <span className="block text-neutral-500">April 26–28, 2024</span>
           </GridListItem>
         </GridList>
       </Container>
@@ -112,7 +160,8 @@ function Education() {
 
 export const metadata = {
   title: 'About',
-  description: 'Angela Pater is a nationally certified massage therapist with over 25 years of experience, specializing in craniosacral therapy for infants and pediatric care.',
+  description:
+    'Angela Pater is a nationally certified massage therapist with over 25 years of experience, specializing in craniosacral therapy for infants and pediatric care.',
 }
 //  lg:mt-[-240px]
 export default async function About() {
@@ -135,12 +184,12 @@ export default async function About() {
               priority
             />
           </div>
-          <p className="mt-8 flex gap-x-2  text-neutral-950">
+          <p className="mt-8 flex gap-x-2 text-neutral-950">
             I didn’t know what a difference having trained as a craniosacral
             practitioner would make the night I went into labor.
           </p>
 
-          <p className="mt-6 flex gap-x-2  text-neutral-950">
+          <p className="mt-6 flex gap-x-2 text-neutral-950">
             I began applying craniosacral therapy (CST) for healing in 1997
             while a pre-med student at the University of Texas, Austin. I was
             drawn to CST because the touch is light and intended to optimize the
@@ -149,7 +198,7 @@ export default async function About() {
             mindfulness mediation practice I was enjoying at Austin’s newly
             opened (San Francisco’s branch) Zen Center.
           </p>
-          <p className="mt-6 flex gap-x-2  text-neutral-950">
+          <p className="mt-6 flex gap-x-2 text-neutral-950">
             And, I always had a strong sense that I’d study craniosacral therapy
             for the pediatric community when I became a mom. After 18 joyful
             years of marriage, travel and moving to the San Francisco Bay area,
@@ -163,7 +212,7 @@ export default async function About() {
             little ones where as individuals they are in relationship with their
             own essence and what it means to be self-regulated.
           </p>
-          <p className="mt-6 flex gap-x-2  text-neutral-950">
+          <p className="mt-6 flex gap-x-2 text-neutral-950">
             Upon the birth of my child at home, I personally experienced the
             profound benefit of this work. When the midwife informed us that our
             baby had water in her lungs and we’d need to be transferred to the
